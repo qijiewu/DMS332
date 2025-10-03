@@ -1,0 +1,620 @@
+{
+	"folders": [
+		{
+			"name": "DMS332",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.6"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.mac": {
+			"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64:${env:PATH}",
+			"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64",
+			"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64/dotnet",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "DMS332 Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332 Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332 Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332 Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Test",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Test",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332 Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Test",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Shipping",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Shipping",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332 Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332 Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332",
+					"Mac",
+					"Shipping",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332Editor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Debug",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332Editor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"DMS332Editor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "DMS332Editor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"DMS332Editor",
+					"Mac",
+					"Development",
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch DMS332 (Debug)",
+				"request": "launch",
+				"program": "/Users/wuqijie/Documents/DMS332/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "DMS332 Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332 (DebugGame)",
+				"request": "launch",
+				"program": "/Users/wuqijie/Documents/DMS332/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "DMS332 Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332 (Development)",
+				"request": "launch",
+				"program": "/Users/wuqijie/Documents/DMS332/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "DMS332 Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332 (Test)",
+				"request": "launch",
+				"program": "/Users/wuqijie/Documents/DMS332/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "DMS332 Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332 (Shipping)",
+				"request": "launch",
+				"program": "/Users/wuqijie/Documents/DMS332/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "DMS332 Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332Editor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "DMS332Editor Mac Debug Build",
+				"args": [
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332Editor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "DMS332Editor Mac DebugGame Build",
+				"args": [
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch DMS332Editor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "DMS332Editor Mac Development Build",
+				"args": [
+					"/Users/wuqijie/Documents/DMS332/DMS332.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/DMS332": "/Users/wuqijie/Documents/DMS332",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/wuqijie/Documents/DMS332/DMS332.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64:${env:PATH}",
+					"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64",
+					"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64/dotnet",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.6"
+			}
+		]
+	}
+}

@@ -1,0 +1,58 @@
+[
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/DMS332.Build.cs",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/DMS332.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/DMS332.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/Private/Item/Item.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/Private/Pawns/Bird.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/Public/Item/Item.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	},
+	{
+		"file": "/Users/wuqijie/Documents/DMS332/Source/DMS332/Public/Pawns/Bird.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/wuqijie/Documents/DMS332/.vscode/compileCommands_DMS332/DMS332.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.6/Engine/Source"
+	}
+]
